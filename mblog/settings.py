@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-%k+!5&&ksz7bw)1@r0y=6rlz5ei-=c%-x&#0!))4g(v5fn2oon
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+#讓網站支援所有位置的存取
 ALLOWED_HOSTS = ['*']
 
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = "mblog.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / 'templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
